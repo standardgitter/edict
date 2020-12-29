@@ -16,7 +16,7 @@ curl_close($curl);
 fclose($fp);
 
 /*
-wc -l  ecdict.csv  770612
+wc -l  ecdict.csv  770612  l
 */
 
 
