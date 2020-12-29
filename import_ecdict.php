@@ -5,10 +5,10 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 //https://github.com/skywind3000/ECDICT/blob/master/ecdict.csv?raw=true
-
+//https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv
 
 $curl = curl_init();
-curl_setopt($curl, CURLOPT_URL, "https://github.com/skywind3000/ECDICT/blob/master/ecdict.csv?raw=true");
+curl_setopt($curl, CURLOPT_URL, "https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv");
 $fp = fopen ('ecdict.csv', 'w+');
 curl_setopt($curl, CURLOPT_FILE, $fp);
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
